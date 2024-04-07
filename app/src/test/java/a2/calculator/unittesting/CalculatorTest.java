@@ -1,8 +1,7 @@
-package main.test;
+package a2.calculator.unittesting;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import a2.calculator.unittesting.Calculator;
 
 public class CalculatorTest {
 
