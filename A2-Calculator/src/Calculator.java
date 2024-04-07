@@ -4,7 +4,7 @@ public class Calculator {
         if (Double.isFinite(num1 + num2)) {
             return num1 + num2;
         } else {
-            System.out.println("Error! Addition result exceeds maximum representable value.");
+            System.out.println("Error! Penjumlahan melebihi batas nilai yang dapat ditampung");
             return Double.NaN;
         }
     }
@@ -13,7 +13,7 @@ public class Calculator {
         if (Double.isFinite(num1 - num2)) {
             return num1 - num2;
         } else {
-            System.out.println("Error! Subtraction result exceeds maximum representable value.");
+            System.out.println("Error! Penjumlahan melebihi batas nilai yang dapat ditampung");
             return Double.NaN;
         }
     }
@@ -22,7 +22,7 @@ public class Calculator {
         if (Double.isFinite(num1 * num2)) {
             return num1 * num2;
         } else {
-            System.out.println("Error! Multiplication result exceeds maximum representable value.");
+            System.out.println("Error! Penjumlahan melebihi batas nilai yang dapat ditampung");
             return Double.NaN;
         }
     }
@@ -33,11 +33,11 @@ public class Calculator {
             if (Double.isFinite(result)) {
                 return result;
             } else {
-                System.out.println("Error! Division result exceeds maximum representable value.");
+                System.out.println("Error! Penjumlahan melebihi batas nilai yang dapat ditampung");
                 return Double.NaN;
             }
         } else {
-            System.out.println("Error! Division by zero is not allowed.");
+            System.out.println("Error! Pembagian oleh 0 tidak diperbolehkan.");
             return Double.NaN;
         }
     }

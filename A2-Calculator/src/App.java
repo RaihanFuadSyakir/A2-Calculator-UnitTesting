@@ -5,15 +5,15 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Welcome to Basic Calculator!");
+        System.out.println("Aplikasi Kalkulator A2!");
 
-        double num1 = getInput(scanner, "Enter the first number: ");
-        double num2 = getInput(scanner, "Enter the second number: ");
-        System.out.println("Select operation:");
-        System.out.println("1. Addition (+)");
-        System.out.println("2. Subtraction (-)");
-        System.out.println("3. Multiplication (*)");
-        System.out.println("4. Division (/)");
+        double num1 = getInput(scanner, "Masukkan angka pertama: ");
+        double num2 = getInput(scanner, "Masukkan angka kedua: ");
+        System.out.println("Pilihan Operasi angka :");
+        System.out.println("1. Penjumlahan (+)");
+        System.out.println("2. Pengurangan (-)");
+        System.out.println("3. Perkalian (*)");
+        System.out.println("4. Pembagian (/)");
 
         int choice = getOperationChoice(scanner);
 
@@ -40,7 +40,7 @@ public class App {
                 result = Calculator.divide(num1, num2);
                 break;
             default:
-                System.out.println("Invalid choice! Please select a valid operation.");
+                System.out.println("Error! Operasi yang dipilih tidak ada.");
                 result = Double.NaN;
         }
         return result;
@@ -56,7 +56,7 @@ public class App {
                 input = scanner.nextDouble();
                 validInput = true;
             } catch (InputMismatchException e) {
-                System.out.println("Invalid input! Please enter a valid number.");
+                System.out.println("Error! Input tidak valid, tolong masukkan input angka");
                 scanner.next(); // Clear the invalid input from the scanner
             }
         }
@@ -69,15 +69,15 @@ public class App {
 
         while (!validInput) {
             try {
-                System.out.print("Enter your choice: ");
+                System.out.print("Masukkan pilihan operasi: ");
                 choice = scanner.nextInt();
                 if (choice >= 1 && choice <= 4) {
                     validInput = true;
                 } else {
-                    System.out.println("Invalid choice! Please select a valid operation.");
+                    System.out.println("Error! Operasi yang dipilih tidak ada.");
                 }
             } catch (InputMismatchException e) {
-                System.out.println("Invalid input! Please enter a valid number.");
+                System.out.println("Error! Input tidak valid, tolong masukkan input angka.");
                 scanner.next(); // Clear the invalid input from the scanner
             }
         }
