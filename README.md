@@ -75,5 +75,11 @@ public class RaihanTest {
 ## 3. Cara menjalankan test script
 jalankan ```./gradlew test```
 
+
+## 4. Cara menjalankan program
++ jalankan ```./gradlew build``` atau ```./gradlew run``` untuk membangun program
++ setelah command dijalankan akan muncul **app.jar** pada ```"app\build\libs"```
++ lalu jalankan (.jar) dengan ```java -jar app\build\libs\app.jar```
++ 
 ## Hasil report 
 laporan pengujian yang digenerate oleh gradle ada pada ```app/build/reports/index.html```

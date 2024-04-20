@@ -2,13 +2,12 @@ package a2.calculator.unittesting;
 
 public class ValidationValue {
     public static boolean isNumber(String strNum) {
-        double d = 0;
         if (strNum == null) {
             System.out.println("input kosong, tolong masukkan angka yang benar");
             return false;
         }
         try {
-            d = Double.parseDouble(strNum);
+            Double d = Double.parseDouble(strNum);
         } catch (NumberFormatException nfe) {
             System.out.println("input bukan merupakan angka, tolong masukkan angka yang benar");
             return false;
