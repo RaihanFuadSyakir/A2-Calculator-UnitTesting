@@ -7,8 +7,8 @@ public class App {
     public static void main(String[] args) {
         System.out.println("Aplikasi Kalkulator A2!");
 
-        String num1 = InputHandler.scanLine("Masukkan angka pertama: ");
-        String num2 = InputHandler.scanLine("Masukkan angka kedua: ");
+        String num1 = InputHandler.scanLine("Masukkan operand: ");
+        String num2 = InputHandler.scanLine("Masukkan operand: ");
         System.out.println("Pilihan Operasi angka :");
         System.out.println("+ (Penjumlahan)");
         System.out.println("- (Pengurangan)");
