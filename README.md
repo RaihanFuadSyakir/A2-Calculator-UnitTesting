@@ -31,6 +31,8 @@ A2-Calculator-UnitTesting (project-root)
 │       │   │           └───unittesting
 │       │   │                   App.java
 │       │   │                   Calculator.java
+│       │   │                   InputHandler.java
+│       │   │                   ValidationValue.java
 │       │   └───resources
 │       └───test
 │           ├───java
