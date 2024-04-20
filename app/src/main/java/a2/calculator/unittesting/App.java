@@ -10,10 +10,10 @@ public class App {
         String num1 = InputHandler.scanLine("Masukkan angka pertama: ");
         String num2 = InputHandler.scanLine("Masukkan angka kedua: ");
         System.out.println("Pilihan Operasi angka :");
-        System.out.println("1. Penjumlahan (+)");
-        System.out.println("2. Pengurangan (-)");
-        System.out.println("3. Perkalian (*)");
-        System.out.println("4. Pembagian (/)");
+        System.out.println("+ (Penjumlahan)");
+        System.out.println("- (Pengurangan)");
+        System.out.println("* (Perkalian)");
+        System.out.println("/ (Pembagian)");
         String choice = InputHandler.scanLine("");
         boolean isInputsValid = ValidationValue.validateInputs(num1, num2, choice);
         if (isInputsValid) {
