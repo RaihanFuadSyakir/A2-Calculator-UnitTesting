@@ -20,7 +20,11 @@ public class App {
             double converted_num1 = Double.parseDouble(num1);
             double converted_num2 = Double.parseDouble(num2);
             double result = getResult(converted_num1, converted_num2, choice);
-            System.out.println("Result: " + result);
+            if (result != Double.NaN) {
+                System.out.println("Result: " + result);
+            } else {
+                System.out.println("Hasil tidak terdefinisi");
+            }
         } else {
             System.out.println("Operasi hitung gagal");
         }
