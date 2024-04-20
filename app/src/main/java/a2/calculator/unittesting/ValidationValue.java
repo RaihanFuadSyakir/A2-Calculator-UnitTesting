@@ -2,7 +2,7 @@ package a2.calculator.unittesting;
 
 public class ValidationValue {
     public static boolean isNumber(String strNum) {
-        if (strNum == null) {
+        if (strNum == null || strNum.length() < 1) {
             System.out.println("input kosong, tolong masukkan angka yang benar");
             return false;
         }
