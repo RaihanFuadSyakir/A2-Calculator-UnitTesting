@@ -9,7 +9,7 @@ public class App {
 
         String num1 = InputHandler.scanLine("Masukkan operand: ");
         String num2 = InputHandler.scanLine("Masukkan operand: ");
-        System.out.println("Pilihan Operasi angka :");
+        System.out.println("Pilihan Operasi :");
         System.out.println("+ (Penjumlahan)");
         System.out.println("- (Pengurangan)");
         System.out.println("* (Perkalian)");
