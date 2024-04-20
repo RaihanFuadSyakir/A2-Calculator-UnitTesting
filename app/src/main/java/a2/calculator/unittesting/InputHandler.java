@@ -4,16 +4,16 @@ import java.util.Scanner;
 
 public class InputHandler {
     public static String scanLine(String message) {
-        // Create a Scanner object to read input from the console
+        // membuat objek scanner untuk mengambil input
         Scanner scanner = new Scanner(System.in);
 
-        // Prompt the user to enter a line of input
+        // tampilkan pesan instruksi apa yang akan diinput
         System.out.println(message);
-        // Read the entire line of input
+        // membaca input satu line
         String line = scanner.nextLine();
-        // Close the Scanner object to prevent resource leak
+        // menutup objek scanner
         scanner.close();
-        // Return the scanned line
+        // return hasil input
         return line;
     }
 }
