@@ -72,11 +72,14 @@ public class RaihanTest {
 }
 ```
 
-## 3. Cara menjalankan test script
+## 3. Cara menjalankan test script beserta generate test report
 jalankan ```./gradlew test```
 
+## 4. Jika ingin hanya menjalankan unit test spesifik
+jalankan ```./gradlew test --tests NamaClass.NamaMethod```
+misal ```"./gradlew test --tests TestGetResult.testGetResultAddition"```
 
-## 4. Cara menjalankan program
+## 5. Cara menjalankan program
 + jalankan ```./gradlew build``` atau ```./gradlew run``` untuk membangun program
 + setelah command dijalankan akan muncul **app.jar** pada ```"app\build\libs"```
 + lalu jalankan (.jar) dengan ```java -jar app\build\libs\app.jar```

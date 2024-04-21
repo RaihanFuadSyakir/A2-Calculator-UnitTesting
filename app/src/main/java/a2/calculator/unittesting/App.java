@@ -31,7 +31,7 @@ public class App {
 
     }
 
-    private static double getResult(double num1, double num2, String choice) {
+    public static double getResult(double num1, double num2, String choice) {
         double result = 0;
         switch (choice) {
             case "+":
