@@ -4,5 +4,4 @@
 # Ignore Gradle build output directory
 /app/build/*
 !/app/build/reports/
-!/app/build/libs/
 bin
