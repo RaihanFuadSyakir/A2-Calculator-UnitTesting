@@ -45,8 +45,9 @@ A2-Calculator-UnitTesting (project-root)
 └───gradle
 ```
 
-## 2. Cara Membuat Test Script
-buat file (.java) pada ```app/src/test/java/a2/calculator/unittesting/```
+## 2. Cara menambahkan code
++ untuk menambahkan logic program buat (.java) pada ```app/src/main/java/a2/calculator/unittesting/```
++ untuk menambahkan code unit testing buat (.java) pada ```app/src/test/java/a2/calculator/unittesting/```
 
 misal **app/src/test/java/a2/calculator/unittesting/RaihanTest.java**
 
@@ -81,8 +82,9 @@ misal ```"./gradlew test --tests TestGetResult.testGetResultAddition"```
 
 ## 5. Cara menjalankan program
 + jalankan ```./gradlew build``` atau ```./gradlew run``` untuk membangun program
-+ setelah command dijalankan akan muncul **app.jar** pada ```"app\build\libs"```
-+ lalu jalankan (.jar) dengan ```java -jar app\build\libs\app.jar```
++ hasil build akan ada pada ```app\build```
++ setelah command dijalankan akan muncul **app.jar** pada ```/app/build/libs```
++ lalu jalankan (.jar) dengan ```java -jar app/build/libs/app.jar```
 + 
 ## Hasil report 
 laporan pengujian yang digenerate oleh gradle ada pada ```app/build/reports/index.html```
